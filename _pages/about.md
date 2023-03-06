@@ -32,4 +32,6 @@ instructor with [The Carpentries](https://carpentries.org). -->
 
 My Own Intro
 
-# News and Updates
+## News and Updates
+
+News and updates

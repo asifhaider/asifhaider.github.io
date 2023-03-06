@@ -1,14 +1,14 @@
 ---
 permalink: /
-title: "About me"
-excerpt: "About me"
+title: "About Me"
+excerpt: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Welcome! I am a data scientist applying machine learning tools and causal
+<!-- Welcome! I am a data scientist applying machine learning tools and causal
 inference techniques to remote sensing data. I am also an affiliated
 researcher with the [Data-driven Analysis of Peace Project](https://dapp-lab.org)
 and a research collaborator with the 
@@ -27,4 +27,9 @@ focused on civil conflict, it also examines contentious political phenomena
 including terrorism and economic statecraft, and develops new measures of
 institutions in international relations. I have [teaching](teaching) experience
 in both quantitative methodology and international relations, and am a certified
-instructor with [The Carpentries](https://carpentries.org).
+instructor with [The Carpentries](https://carpentries.org). -->
+
+
+My Own Intro
+
+# News and Updates

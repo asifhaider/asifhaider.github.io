@@ -34,4 +34,5 @@ My Own Intro
 
 ## News and Updates
 
-News and updates
+- **March, 2023**: Got promoted to Vice-chairperson (Strategey) at the IEEE Computer Society BUET Student Branch Chapter <a href="https://www.facebook.com/ieeebuetcs/posts/pfbid0rNvtGvX2erYjvMYQba8F739BVo5ZS2Hsrvd1ZuafpcgqeKSraMzzyEtre5uUDHx7l">(Details)</a>
+- **December, 2022**: Presented student research poster at the <a href="https://cse.buet.ac.bd/nsyss2022/"> 9th NSysS </a> held at Cox's Bazar <a href="https://www.linkedin.com/posts/asif-haider-1805112_research-poster-conference-activity-7013882466746720256-c_N6?utm_source=share&utm_medium=member_desktop">(Details)</a>

@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Asif Haider"
 title_separator          : "-"
 name                     : &name "Asif Haider"
-description              : &description "Undergraduate Senior"
+description              : &description "Computer Science and Engineering Undergraduate Senior"
 url                      : https://asifhaider.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "asifhaider/asifhaider.github.io"
@@ -88,11 +88,11 @@ analytics:
 author:
   name             : "Asif Haider"
   avatar           : "Profile.jpg"
-  bio              : "Undergraduate Senior"
-  location         :
+  bio              : "Undergrad Senior @ CSE-BUET"
+  location         : "Dhaka, Bangladesh"
   employer         :
   pubmed           :
-  orcid            : "http://orcid.org/0000-0002-8850-657X"
+  orcid            : # "http://orcid.org/0000-0002-8850-657X"
   googlescholar    : "https://scholar.google.com/citations?user=hpOBwYYAAAAJ&hl=en"
   email            : "elhanasif8@gmail.com"
   researchgate     : "https://www.researchgate.net/profile/Md-Asif-Haider?ev=hdr_xprf"

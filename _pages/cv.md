@@ -13,4 +13,4 @@ redirect_from:
 
 You can download a PDF copy of my CV from [here](/files/pdf/CV.pdf).
 
-**Last updated:** February 2023
+**Last updated:** August 2023

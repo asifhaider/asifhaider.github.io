@@ -12,7 +12,7 @@ Hi, I am <b> Md. Asif Haider </b> (you can simply call me <b>Asif</b>) from <b>D
 
 I am looking for <b>Research Assistant</b> positions in Computer Science and Engineering research labs and <b>Intern/Part-time</b> positions in Software Engineering industry. You can also knock me with mentoring and content creation opportunities.
 
-## News and Updates
+<!-- ## News and Updates
 
 {% assign latest_news_limit = 2 %}
 
@@ -28,7 +28,25 @@ I am looking for <b>Research Assistant</b> positions in Computer Science and Eng
 
 - **March, 2023**: Got promoted to Vice-chairperson (Strategey) at the IEEE Computer Society BUET Student Branch Chapter. <a style="text-decoration: none" href="https://www.facebook.com/ieeebuetcs/posts/pfbid0rNvtGvX2erYjvMYQba8F739BVo5ZS2Hsrvd1ZuafpcgqeKSraMzzyEtre5uUDHx7l">Details</a>
 - **December, 2022**: Presented student research poster at the <a style="text-decoration: none" href="https://cse.buet.ac.bd/nsyss2022/"> 9th NSysS 2022</a> held at Cox's Bazar. <a style="text-decoration: none" href="https://www.linkedin.com/feed/update/urn:li:activity:7013882466746720256/">Details</a>
-- **November, 2022**: Visited Dallas, Texas, USA to attend the <a style="text-decoration: none" href="https://sc22.supercomputing.org/">SC22 conference</a> with ACM <a style="text-decoration: none" href="https://www.sighpc.org/for-our-community/hpc-immersion">HPC Immersion</a> Travel Grant. <a style="text-decoration: none" href="https://www.linkedin.com/posts/asif-haider-1805112_sc22-highperformancecomputing-hpcaccelerates-activity-7004850310015848448-7bkh?utm_source=share&utm_medium=member_desktop">Details</a>
+- **November, 2022**: Visited Dallas, Texas, USA to attend the <a style="text-decoration: none" href="https://sc22.supercomputing.org/">SC22 conference</a> with ACM <a style="text-decoration: none" href="https://www.sighpc.org/for-our-community/hpc-immersion">HPC Immersion</a> Travel Grant. <a style="text-decoration: none" href="https://www.linkedin.com/posts/asif-haider-1805112_sc22-highperformancecomputing-hpcaccelerates-activity-7004850310015848448-7bkh?utm_source=share&utm_medium=member_desktop">Details</a> -->
+
+## News and Updates
+
+{% assign news_list = 
+  "March, 2023:Got promoted to Vice-chairperson (Strategey) at the IEEE Computer Society BUET Student Branch Chapter.|https://www.facebook.com/ieeebuetcs/posts/pfbid0rNvtGvX2erYjvMYQba8F739BVo5ZS2Hsrvd1ZuafpcgqeKSraMzzyEtre5uUDHx7l,
+   December, 2022:Presented student research poster at the 9th NSysS 2022 held at Cox's Bazar.|https://www.linkedin.com/feed/update/urn:li:activity:7013882466746720256/,
+   November, 2022:Visited Dallas, Texas, USA to attend the SC22 conference with ACM HPC Immersion Travel Grant.|https://www.linkedin.com/posts/asif-haider-1805112_sc22-highperformancecomputing-hpcaccelerates-activity-7004850310015848448-7bkh"
+   | split: "," %}
+
+{% for news in news_list %}
+  {% assign news_details = news | split: ":" %}
+  {% assign news_link = news_details[1] | split: "|" %}
+  {% if forloop.index <= 2 %}
+    <p style="color: blue;">- **{{ news_details[0] }}**: {{ news_link[0] }} <a style="text-decoration: none" href="{{ news_link[1] }}">Details</a></p>
+  {% else %}
+    <p>- **{{ news_details[0] }}**: {{ news_link[0] }} <a style="text-decoration: none" href="{{ news_link[1] }}">Details</a></p>
+  {% endif %}
+{% endfor %}
 
 
 **Last updated:** September 2023

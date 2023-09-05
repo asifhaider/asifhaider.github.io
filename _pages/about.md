@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I am <b> Md. Asif Haider </b> (you can simply call me <b>Asif</b>) from <b>Dhaka, Bangladesh</b>. I am a passionate undergraduate student with a never-ending interest in science and arts. I am into learning new things about technology and research with an engineering mindset. Currently studying <b>Computer Science and Engineering</b> as major at <b>Bangladesh University of Engineering and Technology (BUET)</b> in my final (fourth) year.
+Hi, I am <b> Md. Asif Haider </b> (you can simply call me <b>Asif</b>) from <b>Dhaka, Bangladesh</b>. I am a passionate undergraduate student with a never-ending interest in science and arts. I am into learning new things about technology and research with an engineering mindset. Currently studying <b>Computer Science and Engineering (CSE)</b> as major at <b>Bangladesh University of Engineering and Technology (BUET)</b> in my final (fourth) year.
 
 I am currently pursuing my undergraduate thesis under the guidance of Professor <a style="text-decoration: none" href="https://scholar.google.com/citations?user=jAuiNFgAAAAJ&hl=en">Dr. Anindya Iqbal</a>. My current research interests include leveraging <b>Machine Learning</b> and <b>Deep Learning</b> techniques to solve real-world problems in the fields of <b>Natural Language Processing</b> and <b>Software Engineering</b>. I am also interested to explore <b>Computer Vision</b>, <b>Health and Bioinformatics</b> as well as <b>High Performance Computing</b>.
 

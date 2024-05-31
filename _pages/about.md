@@ -17,11 +17,8 @@ I will be joining the CSE Department at the School of Data and Sciences in <a st
 ## News and Updates
 
 - **May, 2024**: Landed my first job offer! I will be joining as a full-time lecturer in <a style="text-decoration: none" href="https://www.bracu.ac.bd/academics/departments/computer-science-and-engineering">BRACU SDS CSE</a>. Looking forward to this new journey in academia!
-
 - **April, 2024**: Awarded a Travel Grant by ACM SIGPLAN to attend the <a style="text-decoration: none" href="https://pldi24.sigplan.org/track/PLMW-PLDI-2024">PLDI 2024</a> conference at Copenhagen, Denmark. Leave me an email if you want to say hello at Copenhagen this June!
-
 - **February, 2024**: Stood runner-up in the BioMed Datathon 2024 arranged by <a style="text-decoration: none" href="https://mhealth.buet.ac.bd/">mHealth Lab</a> at the Department of <a style="text-decoration: none" href="https://bme.buet.ac.bd/">Biomedical Engineering</a>, BUET. <a style="text-decoration: none" href="https://www.linkedin.com/posts/asif-haider-1805112_github-asifhaiderbiomed-datathon-2024-activity-7167125972662648832-pF9P?utm_source=share&utm_medium=member_desktop">[See More]</a>
-
 - **December, 2023**: Presented two student research posters at the <a style="text-decoration: none" href="https://cse.buet.ac.bd/nsyss2023/"> 10th NSysS 2023</a> held at ECE Building, BUET. Attended NSysS three times in a row!
 - **November, 2023**: Awarded with RISE-BUET Internal Student Research Grant 2023 for undergraduate thesis project. <a style="text-decoration: none" href="https://www.buet.ac.bd/web/#/details/117">[Details]</a>
 - **October, 2023**: Won the <a style="text-decoration: none" href="https://signalprocessingsociety.org/community-involvement/video-image-processing-cup">IEEE VIP (Video and Image Processing) Cup 2023 </a> on Opthalmic Biomarker Detection! <a style="text-decoration: none" href="https://cse.buet.ac.bd/home/news_detail/174">[News]</a>

@@ -56,7 +56,7 @@ See my [Google Scholar](https://scholar.google.com/citations?user=hpOBwYYAAAAJ&h
 
 ---
 
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=600&t=m&d=yd0-RuV368Ezgs1E04ZKrYyd8Rp5p7JXaMgCpOWfBKE&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
+<script async type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=600&t=m&d=yd0-RuV368Ezgs1E04ZKrYyd8Rp5p7JXaMgCpOWfBKE&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
 
 ---
 

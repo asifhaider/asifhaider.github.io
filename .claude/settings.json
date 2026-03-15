@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:cdn.jsdelivr.net)",
+      "Bash(curl -sL \"https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css\" -o \"d:/Local Repository/personal-websites/asifhaider.github.io/assets/css/bootstrap.min.css\")",
+      "Bash(curl -sL \"https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css\" -o \"d:/Local Repository/personal-websites/asifhaider.github.io/assets/css/font-awesome.min.css\")",
+      "Bash(curl -sL \"https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css\" -o \"d:/Local Repository/personal-websites/asifhaider.github.io/assets/css/academicons.min.css\")",
+      "Bash(cp \"C:/Users/Asif Haider/.claude/projects/d--Local-Repository-personal-websites-asifhaider-github-io/bd3051d0-b39c-4130-b7c8-353f405c29ed/tool-results/webfetch-1773565443374-wjmibw.bin\" \"d:/Local Repository/personal-websites/asifhaider.github.io/assets/fonts/fontawesome-webfont.eot\")",
+      "Bash(cp \"C:/Users/Asif Haider/.claude/projects/d--Local-Repository-personal-websites-asifhaider-github-io/bd3051d0-b39c-4130-b7c8-353f405c29ed/tool-results/webfetch-1773565444122-te7op9.bin\" \"d:/Local Repository/personal-websites/asifhaider.github.io/assets/fonts/fontawesome-webfont.woff2\")",
+      "Bash(cp \"C:/Users/Asif Haider/.claude/projects/d--Local-Repository-personal-websites-asifhaider-github-io/bd3051d0-b39c-4130-b7c8-353f405c29ed/tool-results/webfetch-1773565444826-n63abh.bin\" \"d:/Local Repository/personal-websites/asifhaider.github.io/assets/fonts/fontawesome-webfont.woff\")",
+      "Bash(cp \"C:/Users/Asif Haider/.claude/projects/d--Local-Repository-personal-websites-asifhaider-github-io/bd3051d0-b39c-4130-b7c8-353f405c29ed/tool-results/webfetch-1773565445306-wtdr2o.bin\" \"d:/Local Repository/personal-websites/asifhaider.github.io/assets/fonts/fontawesome-webfont.ttf\")",
+      "Bash(cp \"C:/Users/Asif Haider/.claude/projects/d--Local-Repository-personal-websites-asifhaider-github-io/bd3051d0-b39c-4130-b7c8-353f405c29ed/tool-results/webfetch-1773565447530-pet2mu.bin\" \"d:/Local Repository/personal-websites/asifhaider.github.io/assets/fonts/academicons.eot\")",
+      "Bash(cp \"C:/Users/Asif Haider/.claude/projects/d--Local-Repository-personal-websites-asifhaider-github-io/bd3051d0-b39c-4130-b7c8-353f405c29ed/tool-results/webfetch-1773565447552-qipt8g.bin\" \"d:/Local Repository/personal-websites/asifhaider.github.io/assets/fonts/academicons.ttf\")",
+      "Bash(cp \"C:/Users/Asif Haider/.claude/projects/d--Local-Repository-personal-websites-asifhaider-github-io/bd3051d0-b39c-4130-b7c8-353f405c29ed/tool-results/webfetch-1773565448292-qlze12.bin\" \"d:/Local Repository/personal-websites/asifhaider.github.io/assets/fonts/academicons.woff\")",
+      "Bash(curl -L -o \"d:/Local Repository/personal-websites/asifhaider.github.io/assets/fonts/fontawesome-webfont.svg\" \"https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.svg\")",
+      "Bash(curl -L -o \"d:/Local Repository/personal-websites/asifhaider.github.io/assets/fonts/academicons.svg\" \"https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/fonts/academicons.svg\")",
+      "Bash(python3 -c \":*)",
+      "Bash(xxd fontawesome-webfont.woff2)",
+      "Bash(xxd fontawesome-webfont.woff)",
+      "Bash(xxd academicons.woff)"
+    ]
+  }
+}

@@ -21,43 +21,6 @@
     <link rel="stylesheet" href="/assets/css/academicons.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="icon" href="/favicon.ico">
-</head>
-
-<body>
-    <!-- Navigation bar -->
-    <nav class="site-nav">
-        <div class="nav-container">
-            <ul>
-                <li class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">
-                    <a href="/">About</a>
-                </li>
-                <!-- <li class="{% if page.url contains '/research' %}active{% endif %}">
-                    <a href="/research">Research</a>
-                </li>
-                <li class="{% if page.url contains '/projects' %}active{% endif %}">
-                    <a href="/projects">Projects</a>
-                </li> -->
-                <li class="{% if page.url contains '/past-experience' %}active{% endif %}">
-                    <a href="/past-experience">Past Experience</a>
-                </li>
-                <li>
-                    <a href="https://drive.google.com/file/d/1bJ4eS-KFOy7JOaItBHn1EGHakyBJru0x/view?usp=sharing" target="_blank">CV</a>
-                </li>
-                <li>
-                    <a href="https://asifhaider.github.io/blog" target="_blank">Blog</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="page-container{% if page.class %} {{ page.class }}{% endif %}">
-        <div class="content-wrapper">
-            <div class="main-content" role="main">
-                {{ content }}
-            </div>
-        </div>
-    </div>
-
     <style>
         /* Navigation bar */
         .site-nav {
@@ -172,5 +135,42 @@
             .entry-thumb { max-width: 100%; }
         }
     </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="site-nav">
+        <div class="nav-container">
+            <ul>
+                <li class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">
+                    <a href="/">About</a>
+                </li>
+                <!-- <li class="{% if page.url contains '/research' %}active{% endif %}">
+                    <a href="/research">Research</a>
+                </li>
+                <li class="{% if page.url contains '/projects' %}active{% endif %}">
+                    <a href="/projects">Projects</a>
+                </li> -->
+                <li class="{% if page.url contains '/past-experience' %}active{% endif %}">
+                    <a href="/past-experience">Past Experience</a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1bJ4eS-KFOy7JOaItBHn1EGHakyBJru0x/view?usp=sharing" target="_blank">CV</a>
+                </li>
+                <li>
+                    <a href="https://asifhaider.github.io/blog" target="_blank">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-container{% if page.class %} {{ page.class }}{% endif %}">
+        <div class="content-wrapper">
+            <div class="main-content" role="main">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

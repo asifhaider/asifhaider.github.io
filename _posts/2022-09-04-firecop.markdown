@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "FireCop: A Miniature Fire Fighting Robot"
+date:   2022-09-04 22:21:59 +00:00
+image: /images/Robot.png
+categories: project
+author: "Md. Asif Haider"
+authors: "<strong>Md. Asif Haider</strong>, K. M. Fahim Shahriyar, Azizur Rahman Anik, Mashiyat Mahjabin Prapty​"
+venue: "Micro-controller and Embedded Systems Course Project"
+# arxiv: https://arxiv.org/abs/2308.14737
+code: https://github.com/asifhaider/FireCop_CSE-316-Project
+video: https://www.youtube.com/watch?v=CnTP4tx_aeA
+paper: https://github.com/asifhaider/FireCop_CSE-316-Project/blob/main/Project%20Report/FireCop_Report.pdf
+type: course
+---
+Here we develop a micro-controller-based low-cost movable robot, facilitated with a minimalistic water supply system to extinguish fire in a small area. Key components include an Arduino Uno as the microcontroller unit and an IR flame detector as the sensory module. We use motor drivers to connect the DC water pump that ejects water via a plastic pipe and the DC gear motors to run the wheels. A servo motor controls the angular rotation of the sensor body and a buzzer module alerts the surroundings upon detecting fire. Finally, rechargeable Li-ion batteries have been used to power up the whole system.

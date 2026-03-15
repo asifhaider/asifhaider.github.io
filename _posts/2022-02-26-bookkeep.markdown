@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "BookKeep: Online Book Store Platform"
+date:   2022-02-26 22:21:59 +00:00
+image: /images/bookkeep.png
+categories: project
+author: "Md. Asif Haider"
+authors: "Md Sultanul Arifin, <strong>Md. Asif Haider</strong>​"
+venue: "Database Course Project"
+# arxiv: https://arxiv.org/abs/2308.14737
+code: https://github.com/arifinnasif/BookKeep
+video: https://youtu.be/g169lSMVZX8?si=1FQEqoHteQRkbFUX
+# website: https://leonidk.github.io/fmb-plus
+type: course
+---
+BookKeep is an online book store platform, primarily focusing on buying and borrowing books online. We implement the important features of a Relational Database Management System (RDBMS) from scratch in this project. Technology stack includes Frontend: HTML5, CSS3, Javascript, JQuery, Bootstrap, Backend: Django (Python), Database: Oracle, SQL, PL/SQL and Other Tools: Git, Docker.

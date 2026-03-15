@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Machine Learning Algorithms and Neural Network from Scratch"
+date:   2023-12-03 22:21:59 +00:00
+image: /images/ml-course.gif
+categories: project
+author: "Md. Asif Haider"
+authors: "<strong>Md. Asif Haider</strong>"
+venue: "Machine Learning Course Assignments"
+# arxiv: https://arxiv.org/abs/2308.14737
+code: https://github.com/asifhaider/Machine-Learning-4-2
+# website: https://leonidk.github.io/fmb-plus
+type: course
+---
+Here we implement matrice transformation, eigen-value decomposition, image reconstruction using singular value decomposition, adaboost algorithm with logistic regression in classfication tasks, exploratory data analysis and preprocessing techniques, training and evaluating a feed forward neural network, principal component analysis and clustering with expectation-maximization algorithm on gaussian mixture models from scratch using only Python3 and Numpy.

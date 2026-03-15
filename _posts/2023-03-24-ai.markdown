@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Intelligent Search Algorithms and Heuristics To Solve Computationally Complex Puzzles"
+date:   2023-03-24 22:21:59 +00:00
+image: /images/local.png
+categories: project
+author: "Md. Asif Haider"
+authors: "<strong>Md. Asif Haider</strong>"
+venue: "Artifical Intelligence Course Assignments"
+# arxiv: https://arxiv.org/abs/2308.14737
+code: https://github.com/asifhaider/Artificial-Intelligence-Sessional-3-2
+# website: https://leonidk.github.io/fmb-plus
+type: course
+---
+We leverage prominent heuristics to develop intelligent solvers for different classical problems including n-puzzle solving via A* search, latin square solving by formulating as a constraint satisfaction problem, exam slot scheduling using local search techniques and finally implementing minesweeper using knowledge engineering and first-order inference logic.

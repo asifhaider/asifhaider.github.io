@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Implementing System Calls, Scheduling, Memory Management with xv6"
+date:   2023-03-23 22:21:59 +00:00
+image: /images/os.jpeg
+categories: project
+author: "Md. Asif Haider"
+authors: "<strong>Md. Asif Haider</strong>"
+venue: "Operating Systems Course Assignments"
+# arxiv: https://arxiv.org/abs/2308.14737
+code: https://github.com/asifhaider/Operating-Systems-3-2
+# website: https://leonidk.github.io/fmb-plus
+type: course
+---
+We first explore bash scripting and synchronization using pthreads. Then we implement custom system calls to incorporate command line functionalities and lottery scheduling algorithm into existing xv6 pedagogical operating system. Finally, we implement copy-on-write paging mechanism for xv6 memory management.

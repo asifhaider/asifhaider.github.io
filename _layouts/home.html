@@ -1,0 +1,266 @@
+---
+layout: default
+---
+<div class="row home-row">
+    <!-- Sidebar - desktop -->
+    <div class="col-md-3 sidebar d-none d-md-block">
+        <h1>Asif Haider</h1>
+        <p style="text-align:center; margin-bottom:8px;">Learner, Researcher, Educator</p>
+                <div class="sidebar-image-container">
+            <img class="profile-image" src="/images/IMG_2928.jpeg" alt="Asif Haider">
+        </div>
+        <p style="text-align:center; font-size:0.7em; color:#888; margin-top:4px; margin-bottom:6px;"> 📍 San Diego Bay during NeurIPS '25</p>
+        <div class="row text-center" id="contact-items">
+            <a title="CV" style="padding-right:10px;" href="https://drive.google.com/file/d/1bJ4eS-KFOy7JOaItBHn1EGHakyBJru0x/view?usp=sharing" target="_blank"><i class="ai ai-cv ai-2x"></i></a>
+            <a title="Google Scholar" style="padding-right:10px;" href="https://scholar.google.com/citations?user=hpOBwYYAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a>
+            <a title="GitHub" style="padding-right:10px;" href="https://github.com/asifhaider" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+            <a title="LinkedIn" style="padding-right:10px;" href="https://www.linkedin.com/in/asif-haider-1805112/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <!-- <a title="X / Twitter" href="https://x.com/asifhaiderelhan" target="_blank"><i class="fa fa-twitter fa-2x"></i></a> -->
+        </div>
+        <!-- Updates section -->
+        <div class="sidebar-section">
+            <h3 style="text-align:center;">News and Updates</h3>
+            <br>
+            {% if page.updates %}
+                {% assign news_cutoff = 2025 %}
+                {% for update in page.updates %}
+                {% assign update_year = update.date | split: " " | last | plus: 0 %}
+                {% if update_year >= news_cutoff %}
+                <p class="update-item">
+                    <strong>{{ update.date }}</strong> — {{ update.text }}
+                </p>
+                {% endif %}
+                {% endfor %}
+                {% assign has_old = false %}
+                {% for update in page.updates %}
+                {% assign update_year = update.date | split: " " | last | plus: 0 %}
+                {% if update_year < news_cutoff %}{% assign has_old = true %}{% endif %}
+                {% endfor %}
+                {% if has_old %}
+                <details class="news-toggle">
+                    <summary>
+                        <span class="toggle-icon">▶</span>
+                        <span>Older</span>
+                    </summary>
+                    {% for update in page.updates %}
+                    {% assign update_year = update.date | split: " " | last | plus: 0 %}
+                    {% if update_year < news_cutoff %}
+                    <p class="update-item">
+                        <strong>{{ update.date }}</strong> — {{ update.text }}
+                    </p>
+                    {% endif %}
+                    {% endfor %}
+                </details>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Mobile header -->
+    <div class="col-12 mobile-header d-md-none">
+        <div class="mobile-profile-container">
+            <div class="mobile-image-container">
+                <img class="profile-image" src="/images/IMG_2928.jpeg" alt="Asif Haider">
+            </div>
+            <div class="mobile-info-container">
+                <h1>Asif Haider</h1>
+                <p style="text-align:center;">Learner, Researcher, Educator</p>
+                <div class="mobile-contact-items">
+                    <a href="https://drive.google.com/file/d/1bJ4eS-KFOy7JOaItBHn1EGHakyBJru0x/view?usp=sharing" target="_blank"><i class="ai ai-cv ai-lg"></i></a>
+                    <a href="https://scholar.google.com/citations?user=hpOBwYYAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-lg"></i></a>
+                    <a href="https://github.com/asifhaider" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/asif-haider-1805112/" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a>
+                    <a href="https://x.com/asifhaiderelhan" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="col-md-9 home-content">
+        {{ content }}
+    </div>
+
+    <!-- Mobile sidebar (updates shown below content) -->
+    <div class="col-12 mobile-sidebar d-md-none">
+        <div class="sidebar-section">
+            <h3 style="text-align:center;">News and Updates</h3>
+            {% if page.updates %}
+                {% assign news_cutoff = 2025 %}
+                {% for update in page.updates %}
+                {% assign update_year = update.date | split: " " | last | plus: 0 %}
+                {% if update_year >= news_cutoff %}
+                <p class="update-item">
+                    <strong>{{ update.date }}</strong> — {{ update.text }}
+                </p>
+                {% endif %}
+                {% endfor %}
+                {% assign has_old_mobile = false %}
+                {% for update in page.updates %}
+                {% assign update_year = update.date | split: " " | last | plus: 0 %}
+                {% if update_year < news_cutoff %}{% assign has_old_mobile = true %}{% endif %}
+                {% endfor %}
+                {% if has_old_mobile %}
+                <details class="news-toggle">
+                    <summary>
+                        <span class="toggle-icon">▶</span>
+                        <span>Older</span>
+                    </summary>
+                    {% for update in page.updates %}
+                    {% assign update_year = update.date | split: " " | last | plus: 0 %}
+                    {% if update_year < news_cutoff %}
+                    <p class="update-item">
+                        <strong>{{ update.date }}</strong> — {{ update.text }}
+                    </p>
+                    {% endif %}
+                    {% endfor %}
+                </details>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<style>
+    .home-row {
+        max-width: 860px;
+        margin: 0 auto;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        padding: 15px;
+        background-color: #e8e7e7;
+        border-radius: 15px;
+        margin-top: 4px;
+        margin-bottom: 10px;
+    }
+    .sidebar h1 {
+        font-size: 165%;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+    .sidebar-image-container {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        overflow: hidden;
+        border-radius: 12px;
+        margin-bottom: 10px;
+    }
+    .profile-image {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+    #contact-items {
+        margin: 8px 0 4px 0;
+    }
+    #contact-items a {
+        color: #444 !important;
+    }
+    #contact-items a:hover {
+        color: #1c71ad !important;
+    }
+    .sidebar-section {
+        margin-top: 12px;
+        padding-top: 8px;
+        border-top: 1px solid #ddd;
+    }
+    .sidebar-section h3 {
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+    .update-item {
+        font-size: 0.85em;
+        margin-bottom: 10px;
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    /* Home content */
+    .home-content {
+        padding-left: 25px;
+        padding-right: 10px;
+        text-align: justify;
+    }
+    .home-content p {
+        text-align: justify;
+        margin-bottom: 1.1em;
+    }
+
+    /* Mobile */
+    .mobile-header { margin-bottom: 20px; }
+    .mobile-profile-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .mobile-image-container {
+        width: 110px;
+        height: 110px;
+        overflow: hidden;
+        border-radius: 12px;
+        flex-shrink: 0;
+    }
+    .mobile-info-container {
+        flex: 1;
+        text-align: center;
+    }
+    .mobile-info-container h1 {
+        margin-top: 0;
+        margin-bottom: 4px;
+        font-size: 22px;
+    }
+    .mobile-contact-items {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 8px;
+    }
+    .mobile-contact-items a { color: #444 !important; }
+    .mobile-sidebar {
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    /* Bootstrap responsive helpers */
+    @media (min-width: 768px) {
+        .d-md-block { display: block !important; }
+        .d-md-none { display: none !important; }
+    }
+    @media (max-width: 767px) {
+        .d-none { display: none !important; }
+        .home-content { padding-left: 0; padding-right: 0; }
+    }
+
+    /* News toggle */
+    .news-toggle {
+        margin-top: 4px;
+        list-style: none;
+    }
+    .news-toggle summary {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+        user-select: none;
+        list-style: none;
+        padding: 3px 2px;
+        border-radius: 4px;
+        font-size: 0.85em;
+        font-weight: 600;
+        color: #555;
+    }
+    .news-toggle summary::-webkit-details-marker { display: none; }
+    .news-toggle summary::marker { display: none; }
+    .news-toggle summary:hover { background-color: #ddd; }
+    .news-toggle .toggle-icon {
+        font-size: 0.6em;
+        color: #888;
+        transition: transform 0.2s ease;
+        display: inline-block;
+    }
+    .news-toggle[open] .toggle-icon { transform: rotate(90deg); }
+</style>

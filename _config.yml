@@ -1,0 +1,28 @@
+name: Asif Haider
+title: Asif Haider
+author: Md. Asif Haider
+url: "https://asifhaider.github.io"
+base: ''
+description: "Personal academic website of Md. Asif Haider"
+markdown: kramdown
+kramdown:
+    enable_coderay: false
+    auto_ids: false
+    entity_output: symbolic
+highlighter: rouge
+port: 4001
+sass:
+  sass_dir: _sass
+exclude:
+    - node_modules
+    - package.json
+permalink: /blog/:title/
+collections:
+  posts:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

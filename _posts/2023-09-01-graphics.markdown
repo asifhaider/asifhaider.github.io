@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Raster Based Graphics Pipeline and Ray Tracing with OpenGL"
+date:   2023-09-01 22:21:59 +00:00
+image: /images/graphics.bmp
+categories: project
+author: "Md. Asif Haider"
+authors: "<strong>Md. Asif Haider</strong>"
+venue: "Computer Graphics Course Assignments"
+# arxiv: https://arxiv.org/abs/2308.14737
+code: https://github.com/asifhaider/Computer-Graphics-4-1
+# website: https://leonidk.github.io/fmb-plus
+type: course
+---
+We first implement 2D and 3D geometric transformation tasks using OpenGL C++ library. We then implement different steps (modeling, view, projection transformation, clipping, scan conversion) of a raster based graphics rendering pipeline. Finally we implement a ray casting and recursive ray tracing application with OpenGL using phong lighting model that includes a 3D world with objects of various geometric shapes.

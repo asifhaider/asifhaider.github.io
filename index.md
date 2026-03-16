@@ -38,19 +38,19 @@ I usually travel quite a bit during my vacations. I also enjoy music, books, and
 #### Selected Publications
 
 - **[Understanding Dominant Themes in Reviewing Agentic AI-authored Code](https://arxiv.org/abs/2601.19287)**<br>
-  **Md. Asif Haider**, Thomas Zimmermann | **MSR '26**
+  **Md. Asif Haider**, Thomas Zimmermann | **MSR 2026**
 
 - **[Advancing Automatic Code Review and Code Refinement Generation Using Large Language Models](https://arxiv.org/abs/2411.10129)**<br>
-  **Md. Asif Haider**, Ayesha Binte Mostofa, Sk. Sabit Bin Mosaddek, Anindya Iqbal, Toufique Ahmed | **arXiv**
+  **Md. Asif Haider**, Ayesha Binte Mostofa, Sk. Sabit Bin Mosaddek, Anindya Iqbal, Toufique Ahmed | **arXiv, 2024**
 
 - **[Leveraging Complementary Attention Maps in Vision Transformers for OCT Image Analysis](https://ieeexplore.ieee.org/abstract/document/11084435)**<br>
-  H.A.Z. Sameen Shahgir, Tanjeem Azwad Zaman, Khondker Salman Sayeed, **Md. Asif Haider**, Sheikh Saifur Rahman Jony, M. Sohel Rahman | **ICIP '25**
+  H.A.Z. Sameen Shahgir, Tanjeem Azwad Zaman, Khondker Salman Sayeed, **Md. Asif Haider**, Sheikh Saifur Rahman Jony, M. Sohel Rahman | **ICIP 2025**
 
 - **[Zero-shot Prompting for Code Complexity Prediction Using GitHub Copilot](https://ieeexplore.ieee.org/document/10189162/)**<br>
-  Mohammed Latif Siddiq, Abdus Samee, Sk Ruhul Azgor, **Md. Asif Haider**, Shehabul Islam Sawraz, Joanna Cecilia da Silva Santos | **NLBSE Workshop, ICSE '23**
+  Mohammed Latif Siddiq, Abdus Samee, Sk Ruhul Azgor, **Md. Asif Haider**, Shehabul Islam Sawraz, Joanna Cecilia da Silva Santos | **NLBSE Workshop, ICSE 2023**
 
 - **[Forecasting COVID-19 Cases: A Comparative Analysis between Recurrent and Convolutional Neural Networks](https://doi.org/10.1016/j.rinp.2021.104137)**<br>
-  Khondoker Nazmoon Nabi, Md Toki Tahmid, Abdur Rafi, Muhammad Ehsanul Kader, **Md. Asif Haider** | **Results in Physics, Elsevier**
+  Khondoker Nazmoon Nabi, Md Toki Tahmid, Abdur Rafi, Muhammad Ehsanul Kader, **Md. Asif Haider** | **Results in Physics, Elsevier, 2021**
 
 See my [Google Scholar](https://scholar.google.com/citations?user=hpOBwYYAAAAJ&hl=en) for the updated list.
 

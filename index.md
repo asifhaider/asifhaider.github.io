@@ -6,7 +6,7 @@ updates:
   - date: "Jan 2026"
     text: "Short paper got accepted at <a href=\"https://2026.msrconf.org/\">MSR 2026</a> conference colocated with ICSE 2026! <a href=\"https://arxiv.org/abs/2601.19287\">[arXiv]</a>"
   - date: "Sep 2025"
-    text: "Started my PhD journey at the University of California, Irvine as a Graduate Teaching Assistant and Doctoral Researcher in Software Engineering!"
+    text: "Started my PhD journey at UC Irvine as a Graduate Teaching Assistant and Doctoral Researcher in Software Engineering!"
   - date: "Sep 2024"
     text: "Awarded two Travel Grants! One sponsored by Amazon to attend the <a href=\"https://genbench.org/workshop/\">GenBench @ EMNLP 2024</a> conference at Florida; another one sponsored by ACM SIGPLAN to attend the <a href=\"https://2024.splashcon.org/track/splash-2024-PLMW#About\">PLMW @ SPLASH 2024</a> conference at California."
   - date: "Jun 2024"

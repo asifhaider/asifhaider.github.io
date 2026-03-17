@@ -4,7 +4,7 @@ updates:
   - date: "Feb 2026"
     text: "Happy to receive <a href=\"https://conf.researchr.org/track/icse-2026/icse-2026-smew---student-mentoring-workshop\">ICSE SMeW</a> and <a href=\"https://conf.researchr.org/attending/icse-2026/travel-support#sigsoft-caps-travel-support-for-icse-2026\">ACM SIGSOFT CAPS</a> travel grants to attend <a href=\"https://conf.researchr.org/home/icse-2026/\">ICSE 2026</a> at Rio De Janeiro, Brazil!"
   - date: "Jan 2026"
-    text: "Short paper got accepted at <a href=\"https://2026.msrconf.org/\">MSR 2026</a> conference colocated with ICSE 2026! <a href=\"https://arxiv.org/abs/2601.19287\">[arXiv]</a>"
+    text: "Short paper got accepted at <a href=\"https://2026.msrconf.org/\">MSR 2026</a>! <a href=\"https://arxiv.org/abs/2601.19287\">[arXiv]</a>"
   - date: "Sep 2025"
     text: "Started my PhD journey at UC Irvine as a Graduate Teaching Assistant and Doctoral Researcher in Software Engineering!"
   - date: "Sep 2024"

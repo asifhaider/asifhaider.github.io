@@ -16,11 +16,258 @@
     <meta name="author" content="Asif Haider">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/academicons.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="icon" href="/favicon.ico">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <style>
+        /* Navigation bar */
+        .site-nav {
+            background-color: #ffffff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+        .nav-container {
+            max-width: 860px;
+            margin: 0 auto;
+            background-color: #e8e7e7;
+            border-radius: 10px;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .site-nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .site-nav li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        .site-nav a {
+            text-decoration: none;
+            color: #333 !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.04em;
+        }
+        .site-nav a:hover {
+            color: #0056b3 !important;
+        }
+        .site-nav .active a {
+            color: #0056b3 !important;
+        }
+
+        /* Page layout */
+        .page-container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .content-wrapper {
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+        .main-content {
+            max-width: 100%;
+            line-height: 1.6;
+        }
+        .main-content > p {
+            text-align: justify;
+            margin-bottom: 1.2em;
+        }
+
+        /* Research/project entry layout */
+        .entry-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            align-items: flex-start;
+        }
+        .entry-thumb {
+            flex: 0 0 160px;
+            max-width: 160px;
+        }
+        .entry-thumb img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .entry-body {
+            flex: 1;
+        }
+        .entry-body h3 {
+            color: darkblue;
+            margin-bottom: 6px;
+            font-size: 1em;
+            text-align: left;
+        }
+        .entry-body .entry-links a {
+            margin-right: 6px;
+        }
+        .entry-body .entry-sup {
+            color: darkblue;
+            font-weight: 600;
+        }
+
+        /* Section dividers */
+        .section-divider {
+            border: 0;
+            border-top: 1px solid #e5e5e5;
+            margin: 30px 0;
+        }
+
+        @media (max-width: 767px) {
+            body { padding: 10px 5px; }
+            .nav-container {
+                border-radius: 0;
+                padding: 8px 10px;
+            }
+            .site-nav li { margin: 0 8px; }
+            .site-nav a { font-size: 12px; }
+            .entry-row { flex-direction: column; }
+            .entry-thumb { max-width: 100%; }
+        }
+
+        /* Home layout */
+        .home-row {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .sidebar {
+            padding: 15px;
+            background-color: #e8e7e7;
+            border-radius: 15px;
+            margin-top: 4px;
+            margin-bottom: 10px;
+        }
+        .sidebar h1 {
+            font-size: 165%;
+            margin-top: 10px;
+            margin-bottom: 4px;
+        }
+        .sidebar-image-container {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .profile-image {
+            max-width: 100%;
+            border-radius: 12px;
+        }
+        #contact-items {
+            margin: 8px 0 4px 0;
+        }
+        #contact-items a {
+            color: #444 !important;
+        }
+        #contact-items a:hover {
+            color: #1c71ad !important;
+        }
+        .sidebar-section {
+            margin-top: 12px;
+            padding-top: 8px;
+            border-top: 1px solid #ddd;
+        }
+        .sidebar-section h3 {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+        .update-item {
+            font-size: 0.85em;
+            margin-bottom: 10px;
+            line-height: 1.4;
+            text-align: left;
+        }
+        .home-content {
+            padding-left: 25px;
+            padding-right: 10px;
+            text-align: justify;
+        }
+        .home-content p {
+            text-align: justify;
+            margin-bottom: 1.1em;
+        }
+        .mobile-header { margin-bottom: 20px; }
+        .mobile-profile-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .mobile-image-container {
+            width: 110px;
+            height: 110px;
+            overflow: hidden;
+            border-radius: 12px;
+            flex-shrink: 0;
+        }
+        .mobile-info-container {
+            flex: 1;
+            text-align: center;
+        }
+        .mobile-info-container h1 {
+            margin-top: 0;
+            margin-bottom: 4px;
+            font-size: 22px;
+        }
+        .mobile-contact-items {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 8px;
+        }
+        .mobile-contact-items a { color: #444 !important; }
+        .mobile-sidebar {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        @media (min-width: 768px) {
+            .d-md-block { display: block !important; }
+            .d-md-none { display: none !important; }
+        }
+        @media (max-width: 767px) {
+            .d-none { display: none !important; }
+            .home-content { padding-left: 0; padding-right: 0; }
+        }
+        .news-toggle {
+            margin-top: 4px;
+            list-style: none;
+        }
+        .news-toggle summary {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            user-select: none;
+            list-style: none;
+            padding: 3px 2px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #555;
+        }
+        .news-toggle summary::-webkit-details-marker { display: none; }
+        .news-toggle summary::marker { display: none; }
+        .news-toggle summary:hover { background-color: #ddd; }
+        .news-toggle .toggle-icon {
+            font-size: 0.6em;
+            color: #888;
+            transition: transform 0.2s ease;
+            display: inline-block;
+        }
+        .news-toggle[open] .toggle-icon { transform: rotate(90deg); }
+    </style>
 </head>
 
 <body>
@@ -41,7 +288,7 @@
                     <a href="/past-experience">Past Experience</a>
                 </li>
                 <li>
-                    <a href="https://drive.google.com/file/d/1bJ4eS-KFOy7JOaItBHn1EGHakyBJru0x/view?usp=sharing" target="_blank">CV</a>
+                    <a href="/assets/Asif_Haider_CV_April_26.pdf" target="_blank">CV</a>
                 </li>
                 <li>
                     <a href="https://asifhaider.github.io/blog" target="_blank">Blog</a>
@@ -57,13 +304,13 @@
     <!-- Sidebar - desktop -->
     <div class="col-md-3 sidebar d-none d-md-block">
         <h1>Asif Haider</h1>
-        <p style="text-align:center; margin-bottom:8px;">Learner, Researcher, Educator</p>
+        <p style="text-align:center; margin-bottom:8px; font-size:0.8em;">Learner, Researcher, Educator</p>
                 <div class="sidebar-image-container">
             <img class="profile-image" src="/images/IMG_2928.jpeg" alt="Asif Haider">
         </div>
-        <p style="text-align:center; font-size:0.7em; color:#888; margin-top:4px; margin-bottom:6px;"> 📍 San Diego Bay during NeurIPS '25</p>
+        <p style="text-align:center; font-size:0.7em; color:#888; margin-top:4px; margin-bottom:6px;">📍Bayside Trail, San Diego (NeurIPS '25)</p>
         <div class="row text-center" id="contact-items">
-            <a title="CV" style="padding-right:10px;" href="https://drive.google.com/file/d/1bJ4eS-KFOy7JOaItBHn1EGHakyBJru0x/view?usp=sharing" target="_blank"><i class="ai ai-cv ai-2x"></i></a>
+            <a title="CV" style="padding-right:10px;" href="/assets/Asif_Haider_CV_April_26.pdf" target="_blank"><i class="ai ai-cv ai-2x"></i></a>
             <a title="Google Scholar" style="padding-right:10px;" href="https://scholar.google.com/citations?user=hpOBwYYAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a>
             <a title="GitHub" style="padding-right:10px;" href="https://github.com/asifhaider" target="_blank"><i class="fa fa-github fa-2x"></i></a>
             <a title="LinkedIn" style="padding-right:10px;" href="https://www.linkedin.com/in/asif-haider-1805112/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
@@ -79,21 +326,21 @@
                 
                 
                 <p class="update-item">
-                    <strong>Feb 2026</strong> — Received <a href="https://conf.researchr.org/track/icse-2026/icse-2026-smew---student-mentoring-workshop">SMeW@ICSE</a> and <a href="https://conf.researchr.org/attending/icse-2026/travel-support#sigsoft-caps-travel-support-for-icse-2026">ACM SIGSOFT CAPS</a> travel grants to attend <a href="https://conf.researchr.org/home/icse-2026/">ICSE 2026</a> at Rio De Janeiro, Brazil!
+                    <strong>Feb 2026</strong> — Happy to receive <a href="https://conf.researchr.org/track/icse-2026/icse-2026-smew---student-mentoring-workshop">NSF SMeW@ICSE</a> and <a href="https://conf.researchr.org/attending/icse-2026/travel-support#sigsoft-caps-travel-support-for-icse-2026">ACM SIGSOFT CAPS</a> travel grants to attend <a href="https://conf.researchr.org/home/icse-2026/">ICSE 2026</a> at Rio De Janeiro, Brazil!
                 </p>
                 
                 
                 
                 
                 <p class="update-item">
-                    <strong>Jan 2026</strong> — Short paper got accepted at <a href="https://2026.msrconf.org/">MSR 2026</a> conference colocated with ICSE 2026! <a href="https://arxiv.org/abs/2601.19287">[arXiv]</a>
+                    <strong>Jan 2026</strong> — Short paper got accepted at <a href="https://2026.msrconf.org/">MSR 2026</a>! <a href="https://arxiv.org/abs/2601.19287">[arXiv]</a>
                 </p>
                 
                 
                 
                 
                 <p class="update-item">
-                    <strong>Sep 2025</strong> — Started my PhD journey at the University of California, Irvine as a Graduate Teaching Assistant and Doctoral Researcher in Software Engineering!
+                    <strong>Sep 2025</strong> — Started my PhD journey at UC Irvine as a Graduate Teaching Assistant and Doctoral Researcher in Software Engineering!
                 </p>
                 
                 
@@ -221,7 +468,7 @@
                 <h1>Asif Haider</h1>
                 <p style="text-align:center;">Learner, Researcher, Educator</p>
                 <div class="mobile-contact-items">
-                    <a href="https://drive.google.com/file/d/1bJ4eS-KFOy7JOaItBHn1EGHakyBJru0x/view?usp=sharing" target="_blank"><i class="ai ai-cv ai-lg"></i></a>
+                    <a href="/assets/Asif_Haider_CV_April_26.pdf" target="_blank"><i class="ai ai-cv ai-lg"></i></a>
                     <a href="https://scholar.google.com/citations?user=hpOBwYYAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-lg"></i></a>
                     <a href="https://github.com/asifhaider" target="_blank"><i class="fa fa-github fa-lg"></i></a>
                     <a href="https://www.linkedin.com/in/asif-haider-1805112/" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a>
@@ -233,11 +480,11 @@
 
     <!-- Main content -->
     <div class="col-md-9 home-content">
-        <p>Hello, This is Asif! I am a first-year PhD student in Informatics (Software Engineering) at the <a href="https://ics.uci.edu/research-areas/software-engineering-and-systems/">University of California, Irvine</a>. My research interests broadly include <strong>Empirical Software Engineering</strong>, <strong>Developer Experience</strong>, and <strong>Software Repository Mining</strong>. I am excited to be working with Professor <a href="https://thomas-zimmermann.com/">Thomas Zimmermann</a>, as one of the first members of our <a href="https://capybara.science/">Capybara Science Lab</a> on the future of software engineering.</p>
+        <p>Hello, This is Asif! I am a first-year PhD student in Informatics (Software Engineering) at the <a href="https://ics.uci.edu/research-areas/software-engineering-and-systems/">University of California, Irvine</a>. My research interests broadly include <strong>Empirical Software Engineering</strong>, <strong>Developer Experience</strong>, and <strong>Software Repository Mining</strong>. I am excited to be working with Professor <a href="https://thomas-zimmermann.com/">Thomas Zimmermann</a>, as one of the first members of our <a href="https://capybara.science/">Capybara Science Lab</a> on the Future of Software.</p>
 
-<p>Originally from Bangladesh, I am currently on study leave from <a href="https://www.bracu.ac.bd/academics/departments/computer-science-and-engineering">BRAC University</a>, where I served one year as a Lecturer in Computer Science and Engineering (CSE). Before that, I completed my Bachelor&rsquo;s degree in the same major from <a href="https://cse.buet.ac.bd/">Bangladesh University of Engineering and Technology (BUET)</a>. Awarded the undergraduate research grant, there I led our thesis work on Large Language Models for Code Review and Repair Generation.</p>
+<p>Originally from Bangladesh, I am currently on study leave from <a href="https://www.bracu.ac.bd/academics/departments/computer-science-and-engineering">BRAC University</a>, where I served one year as a Lecturer in Computer Science and Engineering (CSE). Before that, I completed my Bachelor&rsquo;s degree in the same major from <a href="https://cse.buet.ac.bd/">Bangladesh University of Engineering and Technology (BUET)</a>. Awarded the undergraduate research grant, there I led our thesis work on Large Language Models for Code Review and Repair Generation. Previously, I explored Deep Learning for healthcare applications as well.</p>
 
-<p>I usually travel quite a bit during my vacations. I also enjoy books, music, and movies! My love for the stage has taken different forms over the years: from doing vocals in our (amateur) rock/metal <a href="https://youtube.com/playlist?list=PLGyqLiHr4R915peLFNC5TSEd-gYtyYDk5&amp;si=m0PHRtE6IHhnNy6V">band</a> during college days to performing with my high school theatre <a href="https://www.facebook.com/share/18BE6nZfx3/">club</a> at national festivals.</p>
+<p>I usually travel quite a bit during my vacations. I also enjoy music, books, and movies! My love for the stage has taken different forms over the years: from doing vocals in our (amateur) rock/metal <a href="https://youtube.com/playlist?list=PLGyqLiHr4R915peLFNC5TSEd-gYtyYDk5&amp;si=m0PHRtE6IHhnNy6V">band</a> during college days to performing with my high school theatre <a href="https://www.facebook.com/share/18BE6nZfx3/">club</a> at national festivals. In an alternate universe, I&rsquo;m a full-time poet. In this one, perhaps owning a cattle ranch somewhere out in the wild can still fix me.</p>
 
 <hr />
 
@@ -246,23 +493,23 @@
 <ul>
   <li>
     <p><strong><a href="https://arxiv.org/abs/2601.19287">Understanding Dominant Themes in Reviewing Agentic AI-authored Code</a></strong><br />
-<strong>Md. Asif Haider</strong>, Thomas Zimmermann | <strong>MSR &lsquo;26</strong></p>
-  </li>
-  <li>
-    <p><strong><a href="https://arxiv.org/abs/2411.10129">Advancing Automatic Code Review and Code Refinement Generation Using Large Language Models</a></strong><br />
-<strong>Md. Asif Haider</strong>, Ayesha Binte Mostofa, Sk. Sabit Bin Mosaddek, Anindya Iqbal, Toufique Ahmed | <strong>arXiv</strong></p>
+<strong>Md. Asif Haider</strong>, Thomas Zimmermann | <strong>MSR 2026</strong></p>
   </li>
   <li>
     <p><strong><a href="https://ieeexplore.ieee.org/abstract/document/11084435">Leveraging Complementary Attention Maps in Vision Transformers for OCT Image Analysis</a></strong><br />
-H.A.Z. Sameen Shahgir, Tanjeem Azwad Zaman, Khondker Salman Sayeed, <strong>Md. Asif Haider</strong>, Sheikh Saifur Rahman Jony, M. Sohel Rahman | <strong>ICIP &lsquo;25</strong></p>
+H.A.Z. Sameen Shahgir, Tanjeem Azwad Zaman, Khondker Salman Sayeed, <strong>Md. Asif Haider</strong>, Sheikh Saifur Rahman Jony, M. Sohel Rahman | <strong>ICIP 2025</strong></p>
+  </li>
+  <li>
+    <p><strong><a href="https://arxiv.org/abs/2411.10129">Prompting and Fine-tuning Large Language Models for Automated Code Review Comment Generation</a></strong><br />
+<strong>Md. Asif Haider</strong>, Ayesha Binte Mostofa, Sk. Sabit Bin Mosaddek, Anindya Iqbal, Toufique Ahmed | <strong>arXiv, 2024</strong></p>
   </li>
   <li>
     <p><strong><a href="https://ieeexplore.ieee.org/document/10189162/">Zero-shot Prompting for Code Complexity Prediction Using GitHub Copilot</a></strong><br />
-Mohammed Latif Siddiq, Abdus Samee, Sk Ruhul Azgor, <strong>Md. Asif Haider</strong>, Shehabul Islam Sawraz, Joanna Cecilia da Silva Santos | <strong>NLBSE Workshop, ICSE &lsquo;23</strong></p>
+Mohammed Latif Siddiq, Abdus Samee, Sk Ruhul Azgor, <strong>Md. Asif Haider</strong>, Shehabul Islam Sawraz, Joanna Cecilia da Silva Santos | <strong>NLBSE Workshop, ICSE 2023</strong></p>
   </li>
   <li>
     <p><strong><a href="https://doi.org/10.1016/j.rinp.2021.104137">Forecasting COVID-19 Cases: A Comparative Analysis between Recurrent and Convolutional Neural Networks</a></strong><br />
-Khondoker Nazmoon Nabi, Md Toki Tahmid, Abdur Rafi, Muhammad Ehsanul Kader, <strong>Md. Asif Haider</strong> | <strong>Results in Physics, Elsevier</strong></p>
+Khondoker Nazmoon Nabi, Md Toki Tahmid, Abdur Rafi, Muhammad Ehsanul Kader, <strong>Md. Asif Haider</strong> | <strong>Results in Physics, Elsevier, 2021</strong></p>
   </li>
 </ul>
 
@@ -270,7 +517,9 @@ Khondoker Nazmoon Nabi, Md Toki Tahmid, Abdur Rafi, Muhammad Ehsanul Kader, <str
 
 <hr />
 
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&amp;w=600&amp;t=m&amp;d=yd0-RuV368Ezgs1E04ZKrYyd8Rp5p7JXaMgCpOWfBKE&amp;co=ffffff&amp;cmo=3acc3a&amp;cmn=ff5353&amp;ct=808080"></script>
+<div style="max-width:100%;overflow:hidden;">
+<script async="" type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&amp;w=a&amp;t=m&amp;d=yd0-RuV368Ezgs1E04ZKrYyd8Rp5p7JXaMgCpOWfBKE&amp;co=ffffff&amp;cmo=3acc3a&amp;cmn=ff5353&amp;ct=808080"></script>
+</div>
 
 <hr />
 
@@ -342,21 +591,21 @@ Khondoker Nazmoon Nabi, Md Toki Tahmid, Abdur Rafi, Muhammad Ehsanul Kader, <str
                 
                 
                 <p class="update-item">
-                    <strong>Feb 2026</strong> — Received <a href="https://conf.researchr.org/track/icse-2026/icse-2026-smew---student-mentoring-workshop">SMeW@ICSE</a> and <a href="https://conf.researchr.org/attending/icse-2026/travel-support#sigsoft-caps-travel-support-for-icse-2026">ACM SIGSOFT CAPS</a> travel grants to attend <a href="https://conf.researchr.org/home/icse-2026/">ICSE 2026</a> at Rio De Janeiro, Brazil!
+                    <strong>Feb 2026</strong> — Happy to receive <a href="https://conf.researchr.org/track/icse-2026/icse-2026-smew---student-mentoring-workshop">NSF SMeW@ICSE</a> and <a href="https://conf.researchr.org/attending/icse-2026/travel-support#sigsoft-caps-travel-support-for-icse-2026">ACM SIGSOFT CAPS</a> travel grants to attend <a href="https://conf.researchr.org/home/icse-2026/">ICSE 2026</a> at Rio De Janeiro, Brazil!
                 </p>
                 
                 
                 
                 
                 <p class="update-item">
-                    <strong>Jan 2026</strong> — Short paper got accepted at <a href="https://2026.msrconf.org/">MSR 2026</a> conference colocated with ICSE 2026! <a href="https://arxiv.org/abs/2601.19287">[arXiv]</a>
+                    <strong>Jan 2026</strong> — Short paper got accepted at <a href="https://2026.msrconf.org/">MSR 2026</a>! <a href="https://arxiv.org/abs/2601.19287">[arXiv]</a>
                 </p>
                 
                 
                 
                 
                 <p class="update-item">
-                    <strong>Sep 2025</strong> — Started my PhD journey at the University of California, Irvine as a Graduate Teaching Assistant and Doctoral Researcher in Software Engineering!
+                    <strong>Sep 2025</strong> — Started my PhD journey at UC Irvine as a Graduate Teaching Assistant and Doctoral Researcher in Software Engineering!
                 </p>
                 
                 
@@ -475,267 +724,10 @@ Khondoker Nazmoon Nabi, Md Toki Tahmid, Abdur Rafi, Muhammad Ehsanul Kader, <str
     </div>
 </div>
 
-<style>
-    .home-row {
-        max-width: 860px;
-        margin: 0 auto;
-    }
-
-    /* Sidebar */
-    .sidebar {
-        padding: 15px;
-        background-color: #e8e7e7;
-        border-radius: 15px;
-        margin-top: 4px;
-        margin-bottom: 10px;
-    }
-    .sidebar h1 {
-        font-size: 165%;
-        margin-top: 10px;
-        margin-bottom: 4px;
-    }
-    .sidebar-image-container {
-        width: 100%;
-        height: auto;
-        max-height: 200px;
-        overflow: hidden;
-        border-radius: 12px;
-        margin-bottom: 10px;
-    }
-    .profile-image {
-        max-width: 100%;
-        border-radius: 12px;
-    }
-    #contact-items {
-        margin: 8px 0 4px 0;
-    }
-    #contact-items a {
-        color: #444 !important;
-    }
-    #contact-items a:hover {
-        color: #1c71ad !important;
-    }
-    .sidebar-section {
-        margin-top: 12px;
-        padding-top: 8px;
-        border-top: 1px solid #ddd;
-    }
-    .sidebar-section h3 {
-        font-size: 1.1em;
-        margin-bottom: 8px;
-    }
-    .update-item {
-        font-size: 0.85em;
-        margin-bottom: 10px;
-        line-height: 1.4;
-        text-align: left;
-    }
-
-    /* Home content */
-    .home-content {
-        padding-left: 25px;
-        padding-right: 10px;
-        text-align: justify;
-    }
-    .home-content p {
-        text-align: justify;
-        margin-bottom: 1.1em;
-    }
-
-    /* Mobile */
-    .mobile-header { margin-bottom: 20px; }
-    .mobile-profile-container {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-    .mobile-image-container {
-        width: 110px;
-        height: 110px;
-        overflow: hidden;
-        border-radius: 12px;
-        flex-shrink: 0;
-    }
-    .mobile-info-container {
-        flex: 1;
-        text-align: center;
-    }
-    .mobile-info-container h1 {
-        margin-top: 0;
-        margin-bottom: 4px;
-        font-size: 22px;
-    }
-    .mobile-contact-items {
-        display: flex;
-        justify-content: center;
-        gap: 12px;
-        margin-top: 8px;
-    }
-    .mobile-contact-items a { color: #444 !important; }
-    .mobile-sidebar {
-        background-color: #f5f5f5;
-        border-radius: 8px;
-        padding: 15px;
-        margin-top: 20px;
-    }
-
-    /* Bootstrap responsive helpers */
-    @media (min-width: 768px) {
-        .d-md-block { display: block !important; }
-        .d-md-none { display: none !important; }
-    }
-    @media (max-width: 767px) {
-        .d-none { display: none !important; }
-        .home-content { padding-left: 0; padding-right: 0; }
-    }
-
-    /* News toggle */
-    .news-toggle {
-        margin-top: 4px;
-        list-style: none;
-    }
-    .news-toggle summary {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        cursor: pointer;
-        user-select: none;
-        list-style: none;
-        padding: 3px 2px;
-        border-radius: 4px;
-        font-size: 0.85em;
-        font-weight: 600;
-        color: #555;
-    }
-    .news-toggle summary::-webkit-details-marker { display: none; }
-    .news-toggle summary::marker { display: none; }
-    .news-toggle summary:hover { background-color: #ddd; }
-    .news-toggle .toggle-icon {
-        font-size: 0.6em;
-        color: #888;
-        transition: transform 0.2s ease;
-        display: inline-block;
-    }
-    .news-toggle[open] .toggle-icon { transform: rotate(90deg); }
-</style>
 
             </div>
         </div>
     </div>
 
-    <style>
-        /* Navigation bar */
-        .site-nav {
-            background-color: #ffffff;
-            padding: 10px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            width: 100%;
-        }
-        .nav-container {
-            max-width: 860px;
-            margin: 0 auto;
-            background-color: #e8e7e7;
-            border-radius: 10px;
-            padding: 10px 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .site-nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .site-nav li {
-            display: inline-block;
-            margin: 0 15px;
-        }
-        .site-nav a {
-            text-decoration: none;
-            color: #333 !important;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 14px;
-            letter-spacing: 0.04em;
-        }
-        .site-nav a:hover {
-            color: #0056b3 !important;
-        }
-        .site-nav .active a {
-            color: #0056b3 !important;
-        }
-
-        /* Page layout */
-        .page-container {
-            max-width: 860px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .content-wrapper {
-            padding-top: 20px;
-            padding-bottom: 40px;
-        }
-        .main-content {
-            max-width: 100%;
-            line-height: 1.6;
-        }
-        .main-content > p {
-            text-align: justify;
-            margin-bottom: 1.2em;
-        }
-
-        /* Research/project entry layout */
-        .entry-row {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 30px;
-            align-items: flex-start;
-        }
-        .entry-thumb {
-            flex: 0 0 160px;
-            max-width: 160px;
-        }
-        .entry-thumb img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .entry-body {
-            flex: 1;
-        }
-        .entry-body h3 {
-            color: darkblue;
-            margin-bottom: 6px;
-            font-size: 1em;
-            text-align: left;
-        }
-        .entry-body .entry-links a {
-            margin-right: 6px;
-        }
-        .entry-body .entry-sup {
-            color: darkblue;
-            font-weight: 600;
-        }
-
-        /* Section dividers */
-        .section-divider {
-            border: 0;
-            border-top: 1px solid #e5e5e5;
-            margin: 30px 0;
-        }
-
-        @media (max-width: 767px) {
-            body { padding: 10px 5px; }
-            .nav-container {
-                border-radius: 0;
-                padding: 8px 10px;
-            }
-            .site-nav li { margin: 0 8px; }
-            .site-nav a { font-size: 12px; }
-            .entry-row { flex-direction: column; }
-            .entry-thumb { max-width: 100%; }
-        }
-    </style>
 </body>
 </html>

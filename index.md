@@ -2,7 +2,7 @@
 layout: home
 updates:
   - date: "Feb 2026"
-    text: "Happy to receive <a href=\"https://conf.researchr.org/track/icse-2026/icse-2026-smew---student-mentoring-workshop\">NSF SMeW@ICSE</a> and <a href=\"https://conf.researchr.org/attending/icse-2026/travel-support#sigsoft-caps-travel-support-for-icse-2026\">ACM SIGSOFT CAPS</a> travel grants to attend <a href=\"https://conf.researchr.org/home/icse-2026/\">ICSE 2026</a> at Rio De Janeiro, Brazil!"
+    text: "Excited to receive <a href=\"https://conf.researchr.org/track/icse-2026/icse-2026-smew---student-mentoring-workshop\">NSF SMeW@ICSE</a> and <a href=\"https://conf.researchr.org/attending/icse-2026/travel-support#sigsoft-caps-travel-support-for-icse-2026\">ACM SIGSOFT CAPS</a> travel grants to attend <a href=\"https://conf.researchr.org/home/icse-2026/\">ICSE 2026</a> at Rio De Janeiro, Brazil!"
   - date: "Jan 2026"
     text: "Short paper got accepted at <a href=\"https://2026.msrconf.org/\">MSR 2026</a>! <a href=\"https://arxiv.org/abs/2601.19287\">[arXiv]</a>"
   - date: "Sep 2025"
@@ -33,7 +33,7 @@ Hello, This is Asif! I am a first-year PhD student in Informatics (Software Engi
 
 Originally from Bangladesh, I am currently on study leave from [BRAC University](https://www.bracu.ac.bd/academics/departments/computer-science-and-engineering), where I served one year as a Lecturer in Computer Science and Engineering (CSE). Before that, I completed my Bachelor's degree in the same major from [Bangladesh University of Engineering and Technology (BUET)](https://cse.buet.ac.bd/). Awarded the undergraduate research grant, there I led our thesis work on Large Language Models for Code Review and Repair Generation. Previously, I explored Deep Learning for healthcare applications as well.
 
-I usually travel quite a bit during my vacations. I also enjoy music, books, and movies! My love for the stage has taken different forms over the years: from doing vocals in our (amateur) rock/metal [band](https://youtube.com/playlist?list=PLGyqLiHr4R915peLFNC5TSEd-gYtyYDk5&si=m0PHRtE6IHhnNy6V) during college days to performing with my high school theatre [club](https://www.facebook.com/share/18BE6nZfx3/) at national festivals. In an alternate universe, I'm a full-time poet. In this one, perhaps owning a cattle ranch somewhere out in the wild can still fix me.
+I try to travel around during my vacations. I also enjoy music, books, and movies! My love for the stage has taken different forms over the years: from doing vocals in our (amateur) rock/metal [band](https://youtube.com/playlist?list=PLGyqLiHr4R915peLFNC5TSEd-gYtyYDk5&si=m0PHRtE6IHhnNy6V) during college days to performing with my high school theatre [club](https://www.facebook.com/share/18BE6nZfx3/) at national festivals.
 
 ---
 
@@ -54,7 +54,7 @@ I usually travel quite a bit during my vacations. I also enjoy music, books, and
 - **[Forecasting COVID-19 Cases: A Comparative Analysis between Recurrent and Convolutional Neural Networks](https://doi.org/10.1016/j.rinp.2021.104137)**<br>
   Khondoker Nazmoon Nabi, Md Toki Tahmid, Abdur Rafi, Muhammad Ehsanul Kader, **Md. Asif Haider** | **Results in Physics, Elsevier, 2021**
 
-See my [Google Scholar](https://scholar.google.com/citations?user=hpOBwYYAAAAJ&hl=en) for the updated list.
+Check my [Google Scholar](https://scholar.google.com/citations?user=hpOBwYYAAAAJ&hl=en) for the updated list.
 
 ---
 

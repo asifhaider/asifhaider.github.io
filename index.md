@@ -1,6 +1,8 @@
 ---
 layout: home
 updates:
+  - date: "Jun 2026"
+    text: "Serving as PC member for <a href=\"https://agent-se.github.io/\">Agentic SE @ KDD 2026</a> and <a href=\"https://conf.researchr.org/track/issta-2026/issta-2026-artifact-evaluation\">Artifact Evaluation @ ISSTA 2026</a>!"
   - date: "Feb 2026"
     text: "Excited to receive <a href=\"https://conf.researchr.org/track/icse-2026/icse-2026-smew---student-mentoring-workshop\">NSF SMeW@ICSE</a> and <a href=\"https://conf.researchr.org/attending/icse-2026/travel-support#sigsoft-caps-travel-support-for-icse-2026\">ACM SIGSOFT CAPS</a> travel grants to attend <a href=\"https://conf.researchr.org/home/icse-2026/\">ICSE 2026</a> at Rio De Janeiro, Brazil!"
   - date: "Jan 2026"

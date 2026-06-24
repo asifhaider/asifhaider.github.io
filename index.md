@@ -60,6 +60,22 @@ Check my [Google Scholar](https://scholar.google.com/citations?user=hpOBwYYAAAAJ
 
 ---
 
+#### Academic Services
+
+**Program Committee**
+
+- PC Member, [Agentic SE Workshop](https://agent-se.github.io/) @ KDD 2026
+- PC Member, [DL4Code Workshop](https://dl4c.github.io/) @ ICML 2026
+- Artifact Evaluation Committee Member, [ISSTA 2026](https://conf.researchr.org/track/issta-2026/issta-2026-artifact-evaluation)
+- PC Member, [BLP Workshop](https://blp-workshop.github.io/) @ IJCNLP-AACL 2025
+
+**Organizing Committee**
+
+- Schedule Chair, IEEE/ACM [ICSE 2026](https://conf.researchr.org/home/icse-2026/)
+- Co-organizer, [Deep Learning Sprint 2.0](https://www.kaggle.com/competitions/dlsprint2) Kaggle Competition, BUET CSE Fest 2023
+
+---
+
 <div style="max-width:100%;overflow:hidden;">
 <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=080808&w=a&t=n&d=OLm1PwzaXCYV4oebtDEmRFiJqADbCr4sH1NKsYej7EI&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
 </div>

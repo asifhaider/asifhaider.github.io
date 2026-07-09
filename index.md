@@ -66,6 +66,7 @@ Check my [Google Scholar](https://scholar.google.com/citations?user=hpOBwYYAAAAJ
 
 **Program Committee**
 
+- Artifact Evaluation Committee Member, [ASE 2026](https://conf.researchr.org/track/ase-2026/ase-2026-artifact-evaluation)
 - Artifact Evaluation Committee Member, [ISSTA 2026](https://conf.researchr.org/track/issta-2026/issta-2026-artifact-evaluation)
 - PC Member, [DL4Code Workshop](https://dl4c.github.io/) @ ICML 2026
 - PC Member, [Agentic SE Workshop](https://agent-se.github.io/) @ KDD 2026

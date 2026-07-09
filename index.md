@@ -2,7 +2,7 @@
 layout: home
 updates:
   - date: "Jul 2026"
-    text: Serving as Artifact Evaluation PC member for <a href=\"https://conf.researchr.org/track/issta-2026/issta-2026-artifact-evaluation\">ISSTA'26</a> and <a href=\"https://conf.researchr.org/track/ase-2026/ase-2026-artifact-evaluation">ASE'26</a>!
+    text: "Serving as Artifact Evaluation PC member for <a href=\"https://conf.researchr.org/track/issta-2026/issta-2026-artifact-evaluation\">ISSTA'26</a> and <a href=\"https://conf.researchr.org/track/ase-2026/ase-2026-artifact-evaluation\">ASE'26</a>!"
   - date: "Jun 2026"
     text: "Serving as PC member for <a href=\"https://agent-se.github.io/\">Agentic SE @ KDD'26</a> and <a href=\"https://dl4c.github.io/\">DL4Code @ ICML'26</a>"
   - date: "Feb 2026"

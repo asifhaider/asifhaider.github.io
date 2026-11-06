@@ -1,6 +1,8 @@
 ---
 layout: home
 updates:
+  - date: "Aug 2026"
+    text: Spent a wonderful time in Denmark to attend the <a href=\"https://conferencemanager.events/nielsbohrquantumsummerschool/conference\">Niels Bohr Quantum Summer School</a> 2026 on Quantum Software and Algorithms
   - date: "Jul 2026"
     text: "Serving as Artifact Evaluation PC member for <a href=\"https://conf.researchr.org/track/issta-2026/issta-2026-artifact-evaluation\">ISSTA'26</a> and <a href=\"https://conf.researchr.org/track/ase-2026/ase-2026-artifact-evaluation\">ASE'26</a>!"
   - date: "Jun 2026"
@@ -35,13 +37,15 @@ updates:
 
 Hello, This is Asif! I am a first-year PhD student in Informatics (Software Engineering) at the [University of California, Irvine](https://ics.uci.edu/research-areas/software-engineering-and-systems/). My research interests broadly lie at the intersection of Software Engineering, Artifiicial Intelligence and Human Factors in Computing. I work with Professor [Thomas Zimmermann](https://thomas-zimmermann.com/), as one of the first members of our '[Capybara Science Lab](https://capybara.science/) on the Future of Software'.
 
-Born and raised in Bangladesh, I am currently on study leave from [BRAC University](https://www.bracu.ac.bd/academics/departments/computer-science-and-engineering), where I served one year as a Lecturer in Computer Science and Engineering (CSE). Before that, I completed my Bachelor's degree in the same major from [Bangladesh University of Engineering and Technology (BUET)](https://cse.buet.ac.bd/). Awarded the undergraduate research grant there, I led our thesis work on Large Language Models for Automated Code Review and Repair. My previous research also explored Deep Learning for healthcare applications.
+Born and raised in Bangladesh, I am currently on study leave from [BRAC University](https://www.bracu.ac.bd/academics/departments/computer-science-and-engineering), where I served one year as a Lecturer in Computer Science and Engineering (CSE). Before that, I completed my Bachelor's degree in the same major from [Bangladesh University of Engineering and Technology (BUET)](https://cse.buet.ac.bd/). Awarded the undergraduate research grant there, I led our thesis work on Large Language Models for Automated Code Review and Repair. My previous research also explored applied Deep Learning in healthcare domain.
 
 When I'm not doing research, I love to travel around and see the world. I also deeply enjoy books, music, and movies! My fascination for the stage has taken different forms over the years: ranging from doing vocals in our hobby rock/metal [band](https://youtube.com/playlist?list=PLGyqLiHr4R915peLFNC5TSEd-gYtyYDk5&si=m0PHRtE6IHhnNy6V) during college days to performing with my high school theatre [club](https://www.facebook.com/share/18BE6nZfx3/) at national festivals. 
 
 ---
 
 #### Selected Publications
+
+Check my [Google Scholar](https://scholar.google.com/citations?user=hpOBwYYAAAAJ&hl=en) page for the updated list.
 
 - **[Understanding Dominant Themes in Reviewing Agentic AI-authored Code](https://arxiv.org/abs/2601.19287)**<br>
   **Md. Asif Haider**, Thomas Zimmermann | **MSR 2026**
@@ -58,20 +62,22 @@ When I'm not doing research, I love to travel around and see the world. I also d
 - **[Forecasting COVID-19 Cases: A Comparative Analysis between Recurrent and Convolutional Neural Networks](https://doi.org/10.1016/j.rinp.2021.104137)**<br>
   Khondoker Nazmoon Nabi, Md Toki Tahmid, Abdur Rafi, Muhammad Ehsanul Kader, **Md. Asif Haider** | **Results in Physics, Elsevier, 2021**
 
-Check my [Google Scholar](https://scholar.google.com/citations?user=hpOBwYYAAAAJ&hl=en) for the updated list.
-
 ---
 
 #### Academic Services
 
 **Program Committee**
 
+- PC Member, [Junior PC](https://2027.msrconf.org/track/msr-2027-junior-pc) and [Mining Challenge](https://2027.msrconf.org/track/msr-2027-mining-challenge) @ MSR 2027
+- PC Member, [BLP Workshop](https://blp-workshop.github.io) @ NAACL 2027, IJCNLP-AACL 2025
 - Artifact Evaluation Committee Member, [ASE 2026](https://conf.researchr.org/track/ase-2026/ase-2026-artifact-evaluation)
 - Artifact Evaluation Committee Member, [ISSTA 2026](https://conf.researchr.org/track/issta-2026/issta-2026-artifact-evaluation)
 - PC Member, [DL4Code Workshop](https://dl4c.github.io/) @ ICML 2026
 - PC Member, [Agentic SE Workshop](https://agent-se.github.io/) @ KDD 2026
-- PC Member, [BLP Workshop](https://blp-workshop.github.io/) @ IJCNLP-AACL 2025
 
+**Journal Review**
+
+- Reviewer, Empirical Software Engineering ([EMSE](https://link.springer.com/journal/10664)), 2026
 
 **Organizing Committee**
 
